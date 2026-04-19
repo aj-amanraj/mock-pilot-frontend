@@ -4,11 +4,11 @@ import {getAuth, GoogleAuthProvider} from "firebase/auth"
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
-  authDomain: "mockpilot-a25e6.firebaseapp.com",
-  projectId: "mockpilot-a25e6",
-  storageBucket: "mockpilot-a25e6.firebasestorage.app",
-  messagingSenderId: "1057902711329",
-  appId: "1:1057902711329:web:6cbb0b85d07e8791498960"
+  authDomain: import.meta.env.VITE_FIREBASE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECTID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
